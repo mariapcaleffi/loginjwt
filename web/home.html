@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bemvindo">
+    <h1>Bem-Vindo(a)!</h1>
+  </div>
+</body>
+<script>
+  fetch('http://localhost:3000/verifica', {
+    headers: {
+      'Authorization': 'Bearer ' + localStorage.getItem('token')
+    }
+  })
+  .then(res => {
+    if (!res.ok) window.location.href = 'index.html';
+  })
+  .catch(() => window.location.href = 'index.html');
+</script>
+
+</html>
