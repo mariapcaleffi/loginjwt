@@ -36,7 +36,7 @@ Este projeto demonstra uma autenticação de usuários via **JWT (JSON Web Token
 ### 1. Clone o repositório
 
 ```
-git clone https://github.com/seu-usuario/Login-JWT.git
+git clone https://github.com/mariapcaleffi/loginjwt
 cd Login-JWT
 ```
 
@@ -51,7 +51,7 @@ npm install
 ### 3. Crie um `.env` na pasta API
 
 ```
-SECRET_KEY=sua_chave_secreta_aqui
+SECRET_KEY=senha123
 ```
 
 ### 4. Inicie a API
